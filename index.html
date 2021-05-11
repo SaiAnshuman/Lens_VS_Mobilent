@@ -1,0 +1,264 @@
+<html>
+  <head>
+    <title>CaseStudy!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    
+
+      <div class="col-xs-12 header_div">
+
+        <h2>CaseStudy<img src="search.gif"></h2>
+
+      </div>
+
+      <div class="col-sm-6 col-xs-12 main_div">
+
+          <label>Image name: Spectacles</label>
+          <img src="glasses.jpg" id="glass">
+          
+          <br>
+          <label id="wolfram_label">Output on Lens Project: </label> <label id="wolfram_output">eyeglasses</label>
+          <label id="mobilenet_label">Output on MobileNet Model: </label> <label id="mobilenet_output">Mousetrap</label>
+          <br>
+          <br>
+          <div id="results" class="btn btn-primary">
+
+          <label>Result-</label>
+          <hr>
+          <label>Lens is more accurate</label>
+
+          </div>
+      
+      </div>
+
+      <div class="col-sm-6 col-xs-12 main_div">
+
+        <label>Image name: Controller</label>
+        <img src="console.jpg" id="console">
+        
+        <br>
+        <label id="wolfram_label">Output on Lens Project: </label> <label id="wolfram_output">Xbox 360 console</label>
+        <label id="mobilenet_label">Output on MobileNet Model: </label> <label id="mobilenet_output">knee pad</label>
+        <br>
+        <br>
+        <div id="results" class="btn btn-primary">
+
+        <label>Result-</label>
+        <hr>
+        <label> Lens is more accurate</label>
+
+        </div>
+    
+    </div>
+
+    <div class="col-sm-6 col-xs-12 main_div">
+
+      <label>Image name: Remote</label>
+      <img src="remote.jpg" id="remote">
+      
+      <br>
+      <label id="wolfram_label">Output on Lens Project: </label> <label id="wolfram_output">TV remote control</label>
+      <label id="mobilenet_label">Output on MobileNet Model: </label> <label id="mobilenet_output">modem</label>
+      <br>
+      <br>
+      <div id="results" class="btn btn-primary">
+
+      <label>Result-</label>
+      <hr>
+      <label>Lens is more accurate</label>
+
+      </div>
+  
+  </div>
+
+  <div class="col-sm-6 col-xs-12 main_div">
+
+    <label>Image name: Clip</label>
+    <img src="clip.jpg" id="clip">
+    
+    <br>
+    <label id="wolfram_label">Output on Lens Project: </label> <label id="wolfram_output">scarf</label>
+    <label id="mobilenet_label">Output on MobileNet Model: </label> <label id="mobilenet_output">iron</label>
+    <br>
+    <br>
+    <div id="results" class="btn btn-primary">
+
+    <label>Result-</label>
+    <hr>
+    <label>none of them are correct but Mobilenet is more accurate</label>
+
+    </div>
+
+</div>
+
+<div class="col-sm-6 col-xs-12 main_div">
+
+  <label>Image name: Vape</label>
+  <img src="vape.jpg" id="vape">
+  
+  <br>
+  <label id="wolfram_label">Output on Lens Project: </label> <label id="wolfram_output">pencil</label>
+  <label id="mobilenet_label">Output on MobileNet Model: </label> <label id="mobilenet_output">bob</label>
+  <br>
+  <br>
+  <div id="results" class="btn btn-primary">
+
+  <label>Result-</label>
+  <hr>
+  <label>none of them are correct yet none accurate</label>
+
+  </div>
+
+</div>
+
+<div class="col-sm-6 col-xs-12 main_div">
+
+  <label>Image name: Rocket</label>
+  <img src="rocket.jpeg" id="rocket">
+  
+  <br>
+  <label id="wolfram_label">Output on Lens Project: </label> <label id="wolfram_output">Rocket</label>
+  <label id="mobilenet_label">Output on MobileNet Model: </label> <label id="mobilenet_output">cocktail shaker</label>
+  <br>
+  <br>
+  <div id="results" class="btn btn-primary">
+
+  <label>Result-</label>
+  <hr>
+  <label> Lens is more accurate</label>
+
+  </div>
+
+</div>
+
+<div class="col-sm-6 col-xs-12 main_div">
+
+  <label>Image name: Orange</label>
+  <img src="orange.jpeg" id="orange">
+  
+  <br>
+  <label id="wolfram_label">Output on Lens Project: </label> <label id="wolfram_output">citrons</label>
+  <label id="mobilenet_label">Output on MobileNet Model: </label> <label id="mobilenet_output">balloon</label>
+  <br>
+  <br>
+  <div id="results" class="btn btn-primary">
+
+  <label>Result-</label>
+  <hr>
+  <label> Lens more accurate</label>
+
+  </div>
+
+</div>
+
+<div class="col-sm-6 col-xs-12 main_div">
+
+  <label>Image name: Bookmark</label>
+  <img src="bookmark.jpeg" id="book">
+  
+  <br>
+  <label id="wolfram_label">Output on Lens Project: </label> <label id="wolfram_output">Bookmark</label>
+  <label id="mobilenet_label">Output on MobileNet Model: </label> <label id="mobilenet_output">lotion</label>
+  <br>
+  <br>
+  <div id="results" class="btn btn-primary">
+
+  <label>Result-</label>
+  <hr>
+  <label>Lens is more accurate</label>
+
+  </div>
+
+</div>
+
+<div class="col-sm-6 col-xs-12 main_div">
+
+  <label>Image name: Keys</label>
+  <img src="Keys.jpeg" id="keys">
+  
+  <br>
+  <label id="wolfram_label">Output on Lens Project: </label> <label id="wolfram_output">Key</label>
+  <label id="mobilenet_label">Output on MobileNet Model: </label> <label id="mobilenet_output">padlock</label>
+  <br>
+  <br>
+  <div id="results" class="btn btn-primary">
+
+  <label>Result-</label>
+  <hr>
+  <label> Lens more accurate</label>
+
+  </div>
+
+</div>
+
+<div class="col-sm-6 col-xs-12 main_div">
+
+  <label>Image name: Sanitizer</label>
+  <img src="sanitezer.jpeg" id="sani">
+  
+  <br>
+  <label id="wolfram_label">Output on Lens Project: </label> <label id="wolfram_output">Sanitizer</label>
+  <label id="mobilenet_label">Output on MobileNet Model: </label> <label id="mobilenet_output">soap dispenser</label>
+  <br>
+  <br>
+  <div id="results" class="btn btn-primary">
+
+  <label>Result-</label>
+  <hr>
+  <label>Lens more accurate</label>
+
+  </div>
+
+</div>
+
+<center>
+
+<div id="test_results">
+
+ <label>I have uploaded 10 images</label>
+ <br>
+ <br>
+ <label>Lens got 8 correct</label>
+ <br>
+ <br>
+ <label>Mobilenet got 1 correct</label>
+ <br>
+ <br>
+ <label>1 both did not guess correct</label>
+ <br>
+ <br>
+ <label>Therefore Lens is more accurate</label>
+
+
+</div>
+
+    </center>
+
+
+    
+<script src="main.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+ 
+

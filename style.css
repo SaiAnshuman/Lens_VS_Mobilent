@@ -1,0 +1,125 @@
+body{
+
+    font-family: 'Audiowide', cursive;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+     
+}
+
+.header_div{
+  
+    background-color: navy;
+    color: purple;
+
+}
+
+.header_div img{
+
+  width: 100px;
+
+}
+
+.main_div{
+
+  background-color: #0149AA;
+  padding: 10px;
+  margin-top: 15px;
+  border: 5px solid #1F70CB;
+
+}
+
+.main_div label{
+
+ background-color: #A6CAEC;
+ width: 310px;
+ padding: 15px;
+ margin-bottom: 0px;
+ box-shadow: 5px 10px 18px blue;
+
+}
+
+#camera{
+
+ border: 2px dotted white;
+ width: 310px;
+ height: 300px;
+ box-shadow: 15px -10px 58px #265FE6;
+
+}
+
+.main_div button{
+
+  width: 310px;
+  font-size: 16px;
+  box-shadow: 5px 10px 18px aliceblue;
+  border: 2px solid #5F50E9;
+
+}
+
+#glass {
+
+ width: 200px;
+ height: 200px;
+}
+
+#console {
+
+  width: 200px;
+  height: 200px;
+}
+
+#remote {
+
+  width: 200px;
+  height: 200px;
+}
+
+#clip {
+
+  width: 200px;
+  height: 200px;
+}
+
+#vape {
+
+  width: 200px;
+  height: 200px;
+}
+
+#rocket {
+
+  width: 200px;
+  height: 200px;
+}
+
+#orange {
+
+  width: 200px;
+  height: 200px;
+}
+
+#book {
+
+  width: 200px;
+  height: 200px;
+}
+
+#keys {
+
+  width: 200px;
+  height: 200px;
+}
+
+#sani {
+
+  width: 200px;
+  height: 200px;
+}
+
+#test_results{
+
+ color: aqua;
+ font-size: 23px;
+
+}
